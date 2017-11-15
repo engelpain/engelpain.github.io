@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAQ,CACN,WAAW,CAAE,IAAI",
+"sources": ["_landing.sass"],
+"names": [],
+"file": "styles.min.css"
+}
