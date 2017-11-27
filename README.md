@@ -8,3 +8,8 @@
   <p>Plantilla para Arquitectos</p>
   <img src="./img/Architect.png" alt="Plantilla Architect" style="width: 100%; height: auto;">
 </a>
+<br><br><br><br>
+<a href="https://engelpain.github.io/startpage">
+  <p>Plantilla de Pantalla de Inicio</p>
+  <img src="./img/startpage.png" alt="Plantilla startpage" style="width: 100%; height: auto;">
+</a>
