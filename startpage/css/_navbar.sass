@@ -1,0 +1,38 @@
+.navbar-default
+  background-color: $rojo500
+  border-radius: 0
+  border: 0 transparent
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
+  font-family: "Montserrat", sans-serif
+  .navbar-brand
+    color: $negro
+    background-color: $blanco
+    letter-spacing: 4px
+    height: auto
+    font-size: 20px
+    &:hover
+      color: $rojo500
+      background-color: $blanco
+  .navbar-nav > li > a
+    color: $blanco
+    letter-spacing: 4px
+    font-size: 16px
+    &:hover
+      color: $gris700
+  .navbar-toggle
+    border-color: transparent
+    border-radius: 0
+    .icon-bar
+      background-color: $blanco
+    &:hover, &:focus
+      background-color: $blanco
+      .icon-bar
+        background-color: $negro
+  @media (max-width: 767px)
+    .navbar-collapse
+      border: 0 transparent
+      background-color: $blanco
+      .navbar-nav > li > a
+        color: $negro
+        &:hover
+          color: $gris700
