@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAQ,CACN,gBAAgB,CAAE,yBAAyB,CAC3C,UAAU,CAAE,GAAG,CACf,QAAQ,CAAE,QAAQ,CAClB,qBAAqB,CAAE,KAAK,CAC5B,mBAAmB,CAAE,aAAa,CAClC,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACpB,iDAAiD,CAVnD,QAAQ,CAWJ,qBAAqB,CAAE,MAAM",
-"sources": ["_landing.sass"],
-"names": [],
-"file": "styles.min.css"
-}
