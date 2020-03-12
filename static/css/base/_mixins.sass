@@ -1,0 +1,26 @@
+@mixin bg_hover_2($color1, $color2)
+  background-position: left bottom
+  background-size: 200% 100%
+  transition: all .5s ease-out
+  &:hover
+    background: linear-gradient(to right, $color1 50%, $color2 50%)
+    background-size: 100% 100%
+    background-position: right bottom
+
+@mixin bg_hover_3($color1, $color2, $color3)
+  background-position: right bottom
+  background-size: 200% 100%
+  transition: all .5s ease-out
+  &:hover
+    background: linear-gradient(to right, $color1 33%, $color2 33%, $color2 67%, $color3 67%)
+    background-size: 100% 100%
+    background-position: left bottom
+
+@mixin bg_hover_4($color1, $color2, $color3, $color4)
+  background-position: right bottom
+  background-size: 200% 100%
+  transition: all .5s ease-out
+  &:hover
+    background: linear-gradient(to right, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%)
+    background-size: 100% 100%
+    background-position: left bottom

@@ -1,0 +1,71 @@
+header
+  min-height: 55vh
+  padding-top: 5vh
+  padding-bottom: 5vh
+  background-color: $gray100
+  font-family: 'Nunito', sans-serif
+  font-weight: 700
+  background: repeating-linear-gradient(135deg, $cyan200, $cyan200 50px, $cyan100 50px, $cyan100 100px)
+  h2
+    color: $gray900
+  p
+    color: $gray700
+.left-entrance
+  animation: bounceInLeft 1s
+.right-entrance
+  animation: bounceInRight 1s
+@mixin making_text($name, $color)
+  .text-#{$name}
+    color: $color
+    position: relative
+    text-decoration: none
+    transition: 0.5s
+    margin-left: 2px
+    margin-right: 2px
+    &::after
+      position: absolute
+      content: ""
+      width: 80%
+      height: 1px
+      top: 100%
+      left: 12px
+      background: darken($color, 10%)
+      transition: transform 0.5s
+      transform: scaleX(0)
+      transform-origin: right
+    &:hover, &:focus
+      color: darken($color, 10%)
+      text-decoration: none
+      &::after
+        transform: scaleX(1)
+        transform-origin: left
+
+@include making_text('fb', $facebook)
+@include making_text('tw', $twitter)
+@include making_text('lk', $linkedin)
+@include making_text('gh', $github)
+@include making_text('ig', $instagram)
+
+@-webkit-keyframes masked-animation
+  0%
+    background-position: 0 0
+  100%
+    background-position: -800px -300px
+
+.name
+  color: #000
+  max-width: 700px
+  text-align: center
+  background: -webkit-linear-gradient(left, #53f 0%, #05d5ff 25%, #a6ffcb 50%, #05d5ff 75%, #53f 100%) repeat
+  -webkit-background-clip: text
+  -ms-background-clip: text
+  -moz-background-clip: text
+  background-clip: text
+  -webkit-text-fill-color: transparent
+  -ms-text-fill-color: transparent
+  -moz-text-fill-color: transparent
+  text-fill-color: transparent
+  -webkit-animation-name: masked-animation
+  -webkit-animation-duration: 10s
+  -webkit-animation-iteration-count: infinite
+  -webkit-animation-timing-function: linear

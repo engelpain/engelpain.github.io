@@ -1,48 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Ing. Angelo Osorio">
-  <meta name="description" content="Portafolios de trabajos">
-  <meta name="keywords" content=" Portfolio, portafolio, trabajos, html, css, javascript, sass, Angular">
+  <meta name="description" content="Portfolio to show some of my jobs developed.">
+  <meta name="keywords" content=" Portfolio, html5, engelpain, web design, UI, UX" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:700|Sarabun|Cantarell:700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./static/img/favicon.png">
   <link rel="stylesheet" href="./static/css/bootstrap.min.css">
   <link rel="stylesheet" href="./static/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./static/css/portfolio/styles.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Gugi|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/animate.css">
+  <link rel="stylesheet" href="./static/css/styles.min.css">
 </head>
 <body>
 
-
-<!-- Header [BEGIN] -->
-<header class="container-fluid">
-  <div class="row">
-    <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-4 offset-md-4 text-center">
-      <img src="./static/img/engelpain.jpg" class="img-fluid rounded-circle p-lg-5 caption" alt="engelpain">
-      <h2 class="text-light bg-dark mt-3 py-4"><span class="text-danger"> Engel_PAIN </span> Portfolio</h2>
-    </div>
-  </div>
-</header>
-<!-- Header [ENDED] -->
-
 <!-- Navbar [BEGIN] -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
-  <a class="navbar-brand" href="#">Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContent" aria-controls="NavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg py-3">
+  <a class="navbar-brand font-nunito"> Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContent"
+          aria-controls="NavbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="NavbarContent">
     <div class="mr-auto"></div>
     <ul class="navbar-nav my-2 my-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#live-pages">Live Pages <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
     </ul>
   </div>
@@ -50,216 +40,338 @@
 <!-- Navbar [ENDED] -->
 
 
-<!-- Live Pages [ENDED] -->
-<section id="live-pages" class="container-fluid mt-3">
-  <h2 class="text-center h1 py-3"><i class="fa fa-code"></i> Live Pages</h2>
-  <div class="row">
-    <div class="col-12 col-md-6 p-md-3">
-      <iframe src="templates/startpage/index.html" frameborder="0" width="100%" height="400px"></iframe>
-      <h2 class="text-center text-uppercase"><a href="https://engelpain.github.io/templates/startpage"> Start Page <i class="fa fa-external-link"></i></a></h2>
-    </div>
-    <div class="col-12 col-md-6 p-md-3">
-      <iframe src="templates/adiario/index.html" frameborder="0" width="100%" height="400px"></iframe>
-      <h2 class="text-center text-uppercase"><a href="https://engelpain.github.io/templates/adiario"> adiario <i class="fa fa-external-link"></i></a></h2>
+
+<!-- Header [BEGIN] -->
+<header>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-8 col-md-4 pb-3 text-center left-entrance">
+        <img src="./static/img/engelpain.jpg" class="img-fluid rounded-circle p-lg-5 caption" alt="engelpain">
+      </div>
+      <div class="col-8 col-md-6 right-entrance">
+        <div class="bg-light p-4 rounded shadow">
+          <h2 class="name pb-3">Angelo Osorio</h2>
+          <p><i class="fa fa-certificate text-warning"></i> IT Engineer Degree</p>
+          <p><i class="fa fa-code text-success"></i> Frontend Web Developer Ssr</p>
+          <p><i class="fa fa-desktop text-dark"></i> UI & UX Experience </p>
+          <p><i class="fa fa-pen-alt text-dark"></i> 5 years making code...</p>
+          <p><i class="fa fa-map-marker-alt text-danger"></i> Venezuela</p>
+          <p class="text-center">
+            <a class="text-fb pl-2" href="https://facebook.com/engelpain"> <i class="fab fa-facebook"></i> engelpain </a>
+            <a class="text-tw pl-2" href="https://twitter.com/Engel_PAIN"> <i class="fab fa-twitter"></i> Engel_PAIN </a>
+            <a class="text-ig pl-2" href="http://instagram.com/engelpain/"> <i class="fab fa-instagram"></i> engelpain </a>
+          </p>
+          <p class="text-center">
+            <a class="text-gh pl-2" href="https://github.com/engelpain"> <i class="fab fa-github"></i> engelpain </a>
+            <a class="text-lk pl-2" href="https://www.linkedin.com/in/engelpain/"> <i class="fab fa-linkedin"></i> engelpain </a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-<!-- Live Pages [ENDED] -->
+</header>
+<!-- Header [ENDED] -->
 
 
 
 <!-- Skills [BEGIN] -->
-<section id="skills" class="container-fluid bg-dark text-light">
-  <div class="row">
-    <div class="col pt-5">
-      <h2 class="text-center h1"><i class="fa fa-code"></i> Skills</h2>
-    </div>
-  </div>
-  <div class="row py-5">
-    <div class="col-9 offset-1 pb-3 text-center">
-      <h3>Programming Language</h3>
-
-      <div class="row">
-        <div class="col-4 text-right"> Php </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-success five" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> 80%</div>
-          </div>
+<section id="skills">
+  <div class="container py-5">
+    <h2 class="text-center h1 text-dark pb-3"><i class="fa fa-code"></i> Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6 pb-3 wow fadeInLeft">
+        <div class="grid grid-2 ruby rounded py-4">
+          <img class="img-skills" src="./static/img/brand/ruby.png" alt="Ruby by https://www.flaticon.es/autores/freepik" />
+          <img class="img-skills" src="./static/img/brand/rails.png" alt="Ruby on rails logo" />
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Python </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-warning five text-dark" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"> 70%</div>
-          </div>
+      <div class="col-12 col-lg-6 pb-3 wow fadeInRight">
+        <div class="grid grid-2 python rounded py-4">
+          <img class="img-skills" src="./static/img/brand/python.png" alt="Python by https://www.flaticon.es/autores/freepik" />
+          <img class="img-skills" src="./static/img/brand/django.png" alt="django logo">
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Ruby </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-danger five" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"> 60%</div>
-          </div>
+      <div class="col-12 pb-3 wow fadeInLeft">
+        <div class="grid grid-3 php rounded py-4">
+          <img class="img-skills" src="./static/img/brand/php.png" alt="Php by https://www.flaticon.es/autores/freepik" />
+          <img class="img-skills" src="./static/img/brand/wordpress.png" alt="Wordpress logo">
+          <img class="img-skills" src="./static/img/brand/laravel.png" alt="Laravel logo">
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Sass / Less </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-danger five" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
+      <div class="col-12 pb-3 wow fadeInRight">
+        <div class="grid grid-4 frontend rounded py-4">
+          <img class="img-skills" src="./static/img/brand/html5.png" alt="html5 by https://www.flaticon.es/autores/freepik">
+          <img class="img-skills" src="./static/img/brand/css3.png" alt="css3 by https://www.flaticon.es/autores/freepik">
+          <img class="img-skills" src="./static/img/brand/bootstrap.png" alt="Bootstrap logo">
+          <img class="img-skills" src="./static/img/brand/sass.png" alt="sass by https://www.flaticon.es/autores/freepik">
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Transact SQL </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-info five" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 75%</div>
-          </div>
+      <div class="col-12 col-lg-6 pb-3 wow fadeInLeft">
+        <div class="grid grid-3 js rounded py-4">
+          <img class="img-skills" src="./static/img/brand/javascript.png" alt="javascript by https://www.flaticon.es/autores/freepik">
+          <img class="img-skills" src="./static/img/brand/vue.png" alt="VueJS Logo">
+          <img class="img-skills" src="./static/img/brand/react.png" alt="React by https://www.flaticon.es/autores/freepik">
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> HTML5 </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
+      <div class="col-12 col-lg-6 pb-3 wow fadeInRight">
+        <div class="grid grid-3 angular rounded py-4">
+          <img class="img-skills" src="./static/img/brand/angular.png" alt="Angular Logo">
+          <img class="img-skills" src="./static/img/brand/typescript.png" alt="typescript by https://www.flaticon.es/autores/freepik">
+          <img class="img-skills" src="./static/img/brand/material.png" alt="material Angular Logo">
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> CSS3 </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Javascript </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-9 offset-1 pb-3 text-center">
-      <h3>Frameworks</h3>
-
-      <div class="row">
-        <div class="col-4 text-right"> Bootstrap </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> jQuery </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95%" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> AngularJS </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100"> 70%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> VueJS </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70%" aria-valuemin="0" aria-valuemax="100"> 70%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> NodeJS </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65%" aria-valuemin="0" aria-valuemax="100"> 65%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Django </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60%" aria-valuemin="0" aria-valuemax="100"> 60%</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-9 offset-1 pb-3 text-center">
-      <h3>Idiomas</h3>
-
-      <div class="row">
-        <div class="col-4 text-right"> Español </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"> 95%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Inglés </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"> 70%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-9 offset-1 pb-3 text-center">
-      <h3>CMS</h3>
-
-      <div class="row">
-        <div class="col-4 text-right"> WordPress </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100"> 80%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4 text-right"> Drupal </div>
-        <div class="col">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80%" aria-valuemin="0" aria-valuemax="100"> 80%</div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 <!-- Skills [ENDED] -->
 
 
+<!-- Portfolio [BEGIN] -->
+<section id="portfolio" class="bg-dark text-light py-5">
+  <div class="container">
+    <h2 class="text-center h1 py-3"><i class="fa fa-code"></i> Portfolio </h2>
+
+    <!-- Private Selfie -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6">
+        <h3 class="text-uppercase text-center text-lg-right pt-5"> Private Selfie </h3>
+        <p class="text-secondary text-center text-lg-right">
+          PWA to share content like Instagram. I worked in Mockup of the App using Bootstrap and Less.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <img class="img-fluid" src="static/img/examples/privateselfie-1.png" alt="Start Page thumbnail">
+          </div>
+          <div class="col-6 col-lg-4">
+            <img class="img-fluid" src="static/img/examples/privateselfie-2.png" alt="Start Page thumbnail">
+          </div>
+          <div class="d-none d-lg-block col-lg-4">
+            <img class="img-fluid" src="static/img/examples/privateselfie-4.png" alt="Start Page thumbnail">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Private Selfie -->
+
+    <!-- Adiario -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-center text-lg-left pt-5"> Adiario </h3>
+        <p class="text-secondary text-center text-lg-left">
+          I make a responsive template from a PSD file to a Electronic Newspaper using Less, Bootstrap, Owlcarousel and more.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <img class="portfolio-thumbnail" src="./static/img/examples/adiario.png" alt="Adiario thumbnail">
+      </div>
+    </div>
+    <!-- ./Adiario -->
+
+    <!-- Canal En Vivo -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> Canal En Vivo </h3>
+        <p class="text-secondary text-center text-lg-right">
+          I make a template to a Web what offer Streaming and videos.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/canalenvivo-1.png" alt="Canal En Vivo thumbnail" />
+          </div>
+          <div class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/canalenvivo-2.png" alt="Canal En Vivo thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Canal En Vivo -->
+
+    <!-- La Informacion -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-center text-lg-left pt-5"> La Informacion </h3>
+        <p class="text-secondary text-center text-lg-left">
+          I make a responsive template from a PSD file to a Electronic Newspaper using Less, Bootstrap, Owlcarousel and more.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <img class="portfolio-thumbnail" src="./static/img/examples/lainformación.png" alt="La Informacion thumbnail">
+      </div>
+    </div>
+    <!-- ./La Informacion -->
+
+    <!-- Cloudlamb -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> Cloudlamb </h3>
+        <p class="text-secondary text-center text-lg-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dolorum, officia nihil dolores, repellat tenetur.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img class="portfolio-thumbnail" src="./static/img/examples/cloudlamb.png" alt="Cloudlamb thumbnail" />
+      </div>
+    </div>
+    <!-- ./Cloudlamb -->
+
+    <!-- EscapeHouse -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-center text-lg-left pt-5"> EscapeHouse </h3>
+        <p class="text-secondary text-center text-lg-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate inventore repellendus, quos delectus totam quibusdam!
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <img class="portfolio-thumbnail" src="./static/img/examples/escapehouse.png" alt="EscapeHouse thumbnail">
+      </div>
+    </div>
+    <!-- ./EscapeHouse -->
+
+    <!-- GPS Andes C.A. -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> GPS Andes C.A. </h3>
+        <p class="text-secondary text-center text-lg-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam et, ducimus voluptas consectetur neque, quo.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img class="portfolio-thumbnail" src="./static/img/examples/gpsandesca.png" alt="GPS Andes C.A. thumbnail" />
+      </div>
+    </div>
+    <!-- ./GPS Andes C.A. -->
+
+    <!-- Guia del paladar -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5 order-1 order-lg-2">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-left pt-5"> Guia del paladar </h3>
+        <p class="text-secondary text-center text-lg-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque dolores iste. Eum, beatae quas.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <div class="row">
+          <div id="hover-left" class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/guiadelpaladar-1.png" alt="Guia del paladar thumbnail" />
+          </div>
+          <div id="hover-right" class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/guiadelpaladar-2.png" alt="Guia del paladar thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Guia del paladar -->
+
+    <!-- Murachi -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> Murachi </h3>
+        <p class="text-secondary text-center text-lg-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fuga nobis, pariatur inventore tempora quasi!
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img class="portfolio-thumbnail" src="./static/img/examples/murachi.png" alt="Murachi thumbnail" />
+      </div>
+    </div>
+    <!-- ./Murachi -->
+
+    <!-- Cumaco Contenidos -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-center text-lg-left pt-5"> Cumaco Contenidos </h3>
+        <p class="text-secondary text-center text-lg-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis, nam adipisci, repellendus quia earum.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <img class="portfolio-thumbnail" src="./static/img/examples/cumacocontenidos.png" alt="Cumaco Contenidos thumbnail">
+      </div>
+    </div>
+    <!-- ./Cumaco Contenidos -->
+
+    <!-- Snow Bracelets -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> Snow Bracelets </h3>
+        <p class="text-secondary text-center text-lg-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque autem distinctio hic dolorem accusantium quia?
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row">
+          <div class="col-4">
+            <img class="portfolio-thumbnail" src="./static/img/examples/snowbraceteles-1.png" alt="Snow Bracelets thumbnail" />
+          </div>
+          <div class="col-4">
+            <img class="portfolio-thumbnail" src="./static/img/examples/snowbraceteles-2.png" alt="Snow Bracelets thumbnail" />
+          </div>
+          <div class="col-4">
+            <img class="portfolio-thumbnail" src="./static/img/examples/snowbraceteles-3.png" alt="Snow Bracelets thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Snow Bracelets -->
+
+    <!-- Ropaxmayor -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-center text-lg-left pt-5"> Ropaxmayor </h3>
+        <p class="text-secondary text-center text-lg-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laboriosam assumenda magni deleniti magnam labore!
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <img class="portfolio-thumbnail" src="./static/img/examples/ropaxmayor.png" alt="Ropaxmayor thumbnail">
+      </div>
+    </div>
+    <!-- ./Ropaxmayor -->
+
+    <!-- starpage -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-right pt-5"> starpage </h3>
+        <p class="text-secondary text-center text-lg-right">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, iusto ipsa eius ducimus, praesentium assumenda.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <img class="portfolio-thumbnail" src="./static/img/examples/starpage.png" alt="starpage thumbnail" />
+      </div>
+    </div>
+    <!-- ./starpage -->
+
+    <!-- Transking -->
+    <div class="row pt-5">
+      <div class="col-12 col-lg-6 order-1 order-lg-2 pt-lg-5">
+        <h3 class="text-uppercase text-uppercase text-center text-lg-left pt-5"> Transking </h3>
+        <p class="text-secondary text-center text-lg-left">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam natus nisi asperiores eum! Fugit, maiores!
+        </p>
+      </div>
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
+        <div class="row">
+          <div class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/transking-1.png" alt="Transking thumbnail" />
+          </div>
+          <div class="col-6">
+            <img class="portfolio-thumbnail" src="./static/img/examples/transking-2.png" alt="Transking thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Transking -->
 
 
+  </div>
+</section>
+<!-- Portfolio [ENDED] -->
 
 
 
@@ -269,19 +381,29 @@
     <div class="col-9 offset-2 col-md-6 offset-md-3 text-center py-5">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link facebook" href="https://www.facebook.com/Engel.PAIN"><i class="fa fa-facebook fa-2x"></i></a>
+          <a class="nav-link facebook" href="https://www.facebook.com/engelpain">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link twitter" href="https://twitter.com/Engel_PAIN"><i class="fa fa-twitter fa-2x"></i></a>
+          <a class="nav-link twitter" href="https://twitter.com/Engel_PAIN">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link googleplus" href="https://plus.google.com/116734817122544193726"><i class="fa fa-google fa-2x"></i></a>
+          <a class="nav-link googleplus" href="https://www.instagram.com/engelpain">
+            <i class="fab fa-google fa-2x"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link linkedin" href="https://www.linkedin.com/in/angelo-daniel-osorio-uzc%C3%A1tegui-5154ab161/"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a class="nav-link linkedin" href="https://www.linkedin.com/in/engelpain/">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link github" href="https://github.com/engelpain"><i class="fa fa-github fa-2x"></i></a>
+          <a class="nav-link github" href="https://github.com/engelpain">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -291,15 +413,44 @@
 
 
 
-
-
-
 <!-- Scripts Codes [BEGIN] -->
 <script src="./static/js/jquery.min.js"></script>
 <script src="./static/js/bootstrap.bundle.min.js"></script>
-
+<script src="./static/js/wow.min.js"></script>
 <!-- Scripts Codes [ENDED] -->
 
+<script>
+  new WOW().init();
+  (function(){
+    var container1 = document.querySelector("#hover-left");
+    var container2 = document.querySelector("#hover-right");
+
+    function hideElement(element, target) {
+      target.classList.add('d-none');
+      element.classList.add('col-12');
+      element.classList.remove('col-6');
+    }
+
+    function showElement(element, target) {
+      target.classList.remove('d-none');
+      element.classList.remove('col-12');
+      element.classList.add('col-6');
+    }
+
+    container1.addEventListener('mouseenter', function (){
+      hideElement(this, container2);
+    }, true);
+    container1.addEventListener('mouseleave', function (){
+      showElement(this, container2);
+    }, true);
+    container2.addEventListener('mouseenter', function (){
+      hideElement(this, container1);
+    }, true);
+    container2.addEventListener('mouseleave', function (){
+      showElement(this, container1);
+    }, true);
+  })();
+</script>
 
 </body>
 </html>
